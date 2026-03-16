@@ -25,11 +25,11 @@ export default function EmailList({
   };
 
   return (
-    <div className="w-80 border-r border-gray-200 bg-white">
-      <div className="border-b border-gray-200 px-4 py-3">
+    <div className="flex h-full w-80 flex-col border-r border-gray-200 bg-white">
+      <div className="shrink-0 border-b border-gray-200 px-4 py-3">
         <h2 className="text-lg font-semibold text-gray-900">Inbox</h2>
       </div>
-      <div className="overflow-y-auto">
+      <div className="flex-1 overflow-y-auto">
         {emails.map((email) => {
           const isReplied = repliedEmailIds.has(email.id);
           return (
