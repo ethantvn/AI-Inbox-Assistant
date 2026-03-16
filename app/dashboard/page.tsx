@@ -207,7 +207,7 @@ export default function Dashboard() {
           onSelectEmail={setSelectedEmailId}
         />
         <EmailDetail
-          email={selectedEmail}
+          email={selectedEmail ?? null}
           replyText={currentReplyText}
           isLoading={isLoadingReply}
           errorMessage={replyError || undefined}
